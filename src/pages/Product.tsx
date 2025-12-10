@@ -63,7 +63,9 @@ const Product = () => {
             <div>
               <p className="text-sm text-muted-foreground mb-2">{product.category}</p>
               <h1 className="text-4xl font-bold mb-4 text-foreground">{product.name}</h1>
-              <p className="text-3xl font-bold text-foreground">${product.price}</p>
+
+              {/* FIXED PRICE DISPLAY */}
+              <p className="text-3xl font-bold text-foreground">₱{product.price}</p>
             </div>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
