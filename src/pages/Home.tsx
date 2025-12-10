@@ -36,7 +36,7 @@ const Home = () => {
            
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 text-white/90 max-w-2xl mx-auto">
-           
+        
           </p>
           <Link to="/shop">
             <Button size="lg" className="bg-white text-primary hover:bg-white/90 px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg font-semibold shadow-lg hover-lift">

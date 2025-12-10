@@ -68,20 +68,20 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "hello@tandemco.com",
-      href: "mailto:hello@tandemco.com",
+      value: "enzogimena.business@gmail.com",
+      href: "mailto:enzogimena.business@gmail.com",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567",
+      value: "+639268778266",
+      href: "tel:+639268778266",
     },
     {
       icon: MapPin,
       label: "Address",
-      value: "123 Street Style Ave, NY 10001",
-      href: "https://maps.google.com",
+      value: "Gen. Maxilom Avenue Extension, Sergio Osmeña Jr Blvd, Cebu City, 6000 Cebu",
+      href: "https://maps.google.com/",
     },
   ];
 
@@ -143,7 +143,7 @@ const Contact = () => {
                       <Input
                         id="name"
                         name="name"
-                        placeholder="John Doe"
+                        placeholder="Shawn Enzo"
                         required
                         className="h-11"
                       />
@@ -154,7 +154,7 @@ const Contact = () => {
                         id="email"
                         name="email"
                         type="email"
-                        placeholder="john@example.com"
+                        placeholder="you@example.com"
                         required
                         className="h-11"
                       />
@@ -227,7 +227,7 @@ const Contact = () => {
 
                 <div className="mt-6 p-4 bg-background rounded-lg">
                   <p className="text-xs md:text-sm text-muted-foreground text-center">
-                    🌍 We typically respond within 24 hours
+                    We typically respond within 24 hours
                   </p>
                 </div>
               </Card>
