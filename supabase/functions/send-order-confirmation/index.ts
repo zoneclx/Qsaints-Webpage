@@ -74,7 +74,7 @@ const handler = async (req: Request): Promise<Response> => {
       <h3>Order Details:</h3>
       <pre>${itemsList}</pre>
       
-      <p><strong>Total Amount: $${totalAmount.toFixed(2)}</strong></p>
+      <p><strong>Total Amount: ₱${totalAmount.toFixed(2)}</strong></p>
       <p><strong>Payment Method:</strong> ${paymentMethod}</p>
     `;
 
@@ -82,7 +82,7 @@ const handler = async (req: Request): Promise<Response> => {
     const emailResponse = await resend.emails.send({
       from: "Order Notification <onboarding@resend.dev>",
       to: ["enzogimena.shawn@gmail.com"],
-      subject: `New Order #${orderId} - $${totalAmount.toFixed(2)}`,
+      subject: `New Order #${orderId} - ₱${totalAmount.toFixed(2)}`,
       html: emailHtml,
     });
 
