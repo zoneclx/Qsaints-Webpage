@@ -38,7 +38,7 @@ const Cart = () => {
             <div>
               <h1 className="text-2xl md:text-4xl font-bold text-foreground">Shopping Cart</h1>
               <p className="text-sm text-muted-foreground mt-1">
-                {items.length} {items.length === 1 ? 'item' : 'items'}
+                {items.length} {items.length === 1 ? "item" : "items"}
               </p>
             </div>
             <Link to="/shop" className="hidden md:block">
@@ -65,7 +65,7 @@ const Cart = () => {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    
+
                     {/* Details */}
                     <div className="flex-1 p-3 md:p-4 flex flex-col justify-between min-w-0">
                       <div className="flex justify-between items-start gap-2">
@@ -88,7 +88,7 @@ const Cart = () => {
                           <Trash2 className="h-4 w-4" />
                         </Button>
                       </div>
-                      
+
                       <div className="flex items-center justify-between mt-auto pt-2">
                         {/* Quantity Controls */}
                         <div className="flex items-center bg-secondary rounded-full">
@@ -110,7 +110,7 @@ const Cart = () => {
                             <Plus className="h-3 w-3" />
                           </Button>
                         </div>
-                        
+
                         <p className="font-bold text-base md:text-lg text-foreground">
                           ₱{(item.price * item.quantity).toFixed(2)}
                         </p>
@@ -136,7 +136,7 @@ const Cart = () => {
             <div className="hidden lg:block lg:col-span-1">
               <Card className="p-6 sticky top-24">
                 <h2 className="text-xl font-bold mb-6 text-foreground">Order Summary</h2>
-                
+
                 <div className="space-y-3 mb-6">
                   <div className="flex justify-between text-sm text-muted-foreground">
                     <span>Subtotal ({items.length} items)</span>
@@ -148,7 +148,7 @@ const Cart = () => {
                   </div>
                   <div className="border-t border-border pt-3 flex justify-between text-lg font-bold text-foreground">
                     <span>Total</span>
-                    <span>${totalPrice.toFixed(2)}</span>
+                    <span>₱{totalPrice.toFixed(2)}</span>
                   </div>
                 </div>
 
@@ -158,7 +158,7 @@ const Cart = () => {
                     <ArrowRight className="h-4 w-4" />
                   </Button>
                 </Link>
-                
+
                 <Link to="/shop" className="block mt-3">
                   <Button variant="ghost" className="w-full text-sm">
                     Continue Shopping
