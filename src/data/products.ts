@@ -13,7 +13,7 @@ export const products: Product[] = [
   {
     id: "1",
     name: "Black Noir S",
-    price: 8,
+    price: 464, // ₱58 × 8
     image: "/products/plainblack1.jpg",
     description: "Premium quality basics crafted for everyday comfort",
     category: "Tops",
@@ -29,7 +29,7 @@ export const products: Product[] = [
   {
     id: "2",
     name: "Qsaints jacket",
-    price: 19,
+    price: 1102, // ₱58 × 19
     image: "/products/jacket1.jpg",
     description: "Comfortable streetwear essential with modern design",
     category: "Outerwear",
@@ -44,7 +44,7 @@ export const products: Product[] = [
   {
     id: "3",
     name: "Qsaint black Cap",
-    price: 5,
+    price: 290, // ₱58 × 5
     image: "/products/cap1.jpg",
     description: "plain black cap with gothic logo design",
     category: "Headwear",
@@ -56,7 +56,7 @@ export const products: Product[] = [
   {  
     id: "4",
     name: "Qsaints x Porsche",
-    price: 12,
+    price: 696, // ₱58 × 12
     image: "/products/porshe1.jpg",
     description: "Premium quality with porshe gtrs design",
     category: "Tops",
