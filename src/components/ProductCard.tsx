@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Skeleton } from "@/components/ui/skeleton";
 
 interface ProductCardProps {
   id: string;
@@ -11,15 +13,24 @@ interface ProductCardProps {
 }
 
 const ProductCard = ({ id, name, price, image, description }: ProductCardProps) => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   return (
     <Card className="group overflow-hidden border-border hover:shadow-xl transition-all duration-300 hover-lift bg-card">
       <Link to={`/product/${id}`}>
-        <div className="aspect-square overflow-hidden bg-secondary/30">
+        <div className="aspect-square overflow-hidden bg-secondary/30 relative">
+          {!imageLoaded && (
+            <Skeleton className="absolute inset-0 w-full h-full" />
+          )}
           <img
             src={image}
             alt={name}
             loading="lazy"
-            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+            decoding="async"
+            onLoad={() => setImageLoaded(true)}
+            className={`w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ${
+              imageLoaded ? "opacity-100" : "opacity-0"
+            }`}
           />
         </div>
       </Link>
