@@ -17,7 +17,7 @@ const ProductCard = ({ id, name, price, image, description }: ProductCardProps) 
 
   return (
     <Card className="group overflow-hidden border-border hover:shadow-xl transition-all duration-300 hover-lift bg-card">
-      <Link to={`/product/${id}`}>
+      <Link to={`/product/₱{id}`}>
         <div className="aspect-square overflow-hidden bg-secondary/30 relative">
           {!imageLoaded && (
             <Skeleton className="absolute inset-0 w-full h-full" />
@@ -45,7 +45,7 @@ const ProductCard = ({ id, name, price, image, description }: ProductCardProps) 
         )}
         <div className="flex items-center justify-between pt-2 gap-2">
           <span className="text-lg sm:text-xl font-bold text-foreground">${price}</span>
-          <Link to={`/product/${id}`}>
+          <Link to={`/product/₱{id}`}>
             <Button variant="outline" size="sm" className="hover:bg-primary hover:text-primary-foreground text-xs sm:text-sm">
               View Details
             </Button>
