@@ -176,7 +176,7 @@ const Cart = () => {
           <div className="flex items-center justify-between mb-3">
             <div>
               <p className="text-xs text-muted-foreground">Total</p>
-              <p className="text-xl font-bold text-foreground">${totalPrice.toFixed(2)}</p>
+              <p className="text-xl font-bold text-foreground">₱{totalPrice.toFixed(2)}</p>
             </div>
             <p className="text-xs text-primary font-medium">Free Shipping</p>
           </div>

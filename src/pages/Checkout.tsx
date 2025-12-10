@@ -123,7 +123,7 @@ const Checkout = () => {
                       Size: {item.size} × {item.quantity}
                     </p>
                   </div>
-                  <p className="font-semibold">${item.price * item.quantity}</p>
+                  <p className="font-semibold">₱{item.price * item.quantity}</p>
                 </div>
               ))}
               <div className="border-t pt-4">
