@@ -112,7 +112,7 @@ const Cart = () => {
                         </div>
                         
                         <p className="font-bold text-base md:text-lg text-foreground">
-                          ${(item.price * item.quantity).toFixed(2)}
+                          ₱{(item.price * item.quantity).toFixed(2)}
                         </p>
                       </div>
                     </div>
@@ -140,7 +140,7 @@ const Cart = () => {
                 <div className="space-y-3 mb-6">
                   <div className="flex justify-between text-sm text-muted-foreground">
                     <span>Subtotal ({items.length} items)</span>
-                    <span>${totalPrice.toFixed(2)}</span>
+                    <span>₱{totalPrice.toFixed(2)}</span>
                   </div>
                   <div className="flex justify-between text-sm text-muted-foreground">
                     <span>Shipping</span>

@@ -129,7 +129,7 @@ const Checkout = () => {
               <div className="border-t pt-4">
                 <div className="flex justify-between text-xl font-bold">
                   <span>Total</span>
-                  <span>${totalPrice}</span>
+                  <span>₱{totalPrice}</span>
                 </div>
               </div>
             </div>
