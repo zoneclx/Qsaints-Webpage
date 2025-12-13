@@ -123,5 +123,35 @@ export const products: Product[] = [
       "Relaxed fit",
       "French terry cotton"
     ]
-  }
+  },
+  {
+    id: "9",
+    name: "My Chemical Romance X Qsaints",
+    price: 900,
+    image: "/products/mcrhoodie.jpg",
+    description: "Comfortable with modern design",
+    category: "Outerwear",
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    details: [
+      "100% Premium Cotton",
+      "Relaxed fit",
+      "French terry cotton",
+      "Gothic Design"
+    ]
+  },
+  {
+    id: "10",
+    name: "Qsaints Buggy Sweatpants",
+    price: 700,
+    image: "/products/sweatpants1.jpg",
+    description: "Comfortable pants",
+    category: "Bottoms",
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    details: [
+      "100% Premium Cotton",
+      "Relaxed fit",
+      "French terry cotton",
+      "Stretchable"
+    ]
+  },
 ];
