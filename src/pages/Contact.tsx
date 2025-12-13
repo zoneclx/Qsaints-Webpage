@@ -143,7 +143,7 @@ const Contact = () => {
                       <Input
                         id="name"
                         name="name"
-                        placeholder="Shawn Enzo"
+                        placeholder="Enzo"
                         required
                         className="h-11"
                       />
@@ -154,7 +154,7 @@ const Contact = () => {
                         id="email"
                         name="email"
                         type="email"
-                        placeholder="you@example.com"
+                        placeholder="you@qsaints.com"
                         required
                         className="h-11"
                       />
